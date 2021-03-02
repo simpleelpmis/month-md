@@ -16,7 +16,7 @@ Part of the [Cotoron](https://cotoron.ga/) series
 - [ ] tests
 - [ ] other
 
-# MARCH 2021 [Ma21](https://github.com/cotoron/Ma21)
+# MARCH 2021 | [Ma21](https://github.com/cotoron/Ma21)
 
 | M     | T   | W   | T   | F   | S   | S   |
 | ----- | --- | --- | --- | --- | --- | --- |
@@ -30,7 +30,8 @@ Part of the [Cotoron](https://cotoron.ga/) series
 # Ideas
 
 - markdown calendar
-  - https://github.com/TseHang/Markdown-it-calendar
+  - https://github.com/TseHang/Markdown-it-calendar ⌚ since... datetime="2017-03-28T07:50:23.564Z"
+    - https://www.npmjs.com/package/markdown-it-calendar
   - https://github.com/pn11/mdcal
   - https://github.com/search?q=calendar+markdown
 
