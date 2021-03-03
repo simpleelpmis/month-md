@@ -43,3 +43,5 @@ Part of the [Cotoron](https://cotoron.ga/) series
 
 - https://www.tablesgenerator.com/markdown_tables
 - https://unlicense.org/
+- https://www.typescriptlang.org/download
+- https://www.digitalocean.com/community/tutorials/typescript-new-project
