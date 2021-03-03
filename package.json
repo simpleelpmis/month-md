@@ -1,0 +1,8 @@
+{
+  "name": "month-md",
+  "version": "0.0.1",
+  "description": "Calendar month in MD",
+  "repository": "git@github.com:simpleelpmis/month-md.git",
+  "author": "simple elpmis <simple@elpm.is>",
+  "license": "UNLICENSED"
+}

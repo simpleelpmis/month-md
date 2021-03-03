@@ -7,8 +7,12 @@ Part of the [Cotoron](https://cotoron.ga/) series
 
 # Plan
 
-- [ ] choose a name
-- [ ] decide on an app
+- [x] choose a name
+  - [ ] mdonth
+  - [ ] mdmonth
+  - [x] month-md
+- [x] decide on an app
+  - node app to create a markdown month
 - [ ] create a schedule
 - [ ] 1 hr daily / 31 hrs total
 - [ ] document as many steps as possible (sensibly)
@@ -16,7 +20,7 @@ Part of the [Cotoron](https://cotoron.ga/) series
 - [ ] tests
 - [ ] other
 
-# MARCH 2021 | [Ma21](https://github.com/cotoron/Ma21)
+# MARCH 2021
 
 | M     | T     | W   | T   | F   | S   | S   |
 | ----- | ----- | --- | --- | --- | --- | --- |
