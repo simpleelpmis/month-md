@@ -18,6 +18,7 @@ Part of the [Cotoron](https://cotoron.ga/) series
 - [ ] document as many steps as possible (sensibly)
 - [ ] pick tech stack
 - [ ] tests
+- [ ] create wireframe
 - [ ] other
 
 # MARCH 2021
@@ -45,3 +46,5 @@ Part of the [Cotoron](https://cotoron.ga/) series
 - https://unlicense.org/
 - https://www.typescriptlang.org/download
 - https://www.digitalocean.com/community/tutorials/typescript-new-project
+- https://stackoverflow.com/questions/34224007/is-there-any-downside-to-using-tsx-instead-of-ts-all-the-times-in-typescript
+- https://www.typescriptlang.org/docs/handbook/compiler-options.html
