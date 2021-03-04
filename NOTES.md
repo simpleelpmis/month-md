@@ -7,6 +7,7 @@
 - [Log](#log)
   - [March 1st](#march-1st)
   - [March 2nd](#march-2nd)
+  - [March 3rd](#march-3rd)
 - [Resources](#resources)
 
 # Plan
@@ -70,6 +71,10 @@ Daily entries?
 - add it to npm?
 - create a wireframe
 
+## March 3rd
+
+- publish alpha
+  - have to wait to republish
 # Resources
 
 - https://www.tablesgenerator.com/markdown_tables
@@ -82,3 +87,4 @@ Daily entries?
 - https://www.theserverside.com/definition/Kebab-case
 - https://bugfender.com/blog/how-to-create-an-npm-package/
 - https://docs.npmjs.com/creating-node-js-modules
+- https://semver.org/
