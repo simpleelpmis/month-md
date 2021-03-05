@@ -8,5 +8,11 @@
   "main":"dist/index.js",
   "devDependencies": {
     "typescript": "^4.2.2"
-  }
+  },
+  "keywords": [
+    "markdown",
+    "month",
+    "table",
+    "calendar"
+  ]
 }
