@@ -81,6 +81,7 @@ Daily entries?
 
 - add keywords
 - pad table
+- use year, month format
 
 # Resources
 
