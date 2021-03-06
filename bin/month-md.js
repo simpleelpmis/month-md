@@ -4,7 +4,7 @@ const actions = process.argv.slice(2);
 
 function helpmehelpyou() {
   console.log(`Usage:
-  month-md month year
+  month-md year month
     ie., month-md 3 2021
 Options: 
   -h, --help        Help menu`)
