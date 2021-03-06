@@ -32,27 +32,38 @@ export function monthTable(month: number, year: number) {
     }
     monthTable += breakLine
 
+    let divider:string = ':---:'
+
     for (let i: number = 0; i <= 6; i++) {
-        monthTable += ':---:|'
+        let dayLength:number = WeekDays[i].length
+        monthTable += divider.padEnd(dayLength, ' ') + '|'
     }
+
     monthTable += breakLine
 
     for (let i: number = 0; i < (daysNum + weekDayNum); i++) {
-        if (i < weekDayNum) {
-            monthTable += '  |'
-        } else {
-            monthTable += (i - weekDayNum + 1) + '|'
-        }
         weekDaysDone = (i % 7)
-        if ((i != 0) && (weekDaysDone == 0)) {
+
+        let dayLength:number = WeekDays[weekDaysDone].length
+
+        if (i < weekDayNum) {
+            monthTable += '|'.padStart(dayLength+1, ' ')
+        } else {
+            let dayNumString:string = String(i + 1)
+            monthTable += dayNumString.padEnd(dayLength, ' ') + '|'
+        }
+        if ((i != 0) && (weekDaysDone == 6)) {
             monthTable += breakLine
         }
     }
 
     weekDaysRemain = weekDaysRemain - weekDaysDone
-    while (weekDaysRemain > 0) {
-        monthTable += '  |'
-        weekDaysRemain--;
+
+    while (weekDaysRemain < 7 ) {
+        console.log(WeekDays[weekDaysRemain])
+        let dayLength:number = WeekDays[weekDaysRemain].length
+        monthTable += '|'.padStart(dayLength+1, ' ')
+        weekDaysRemain++;
     }
-    return monthTable.slice(0, -1)
+    return monthTable
 }

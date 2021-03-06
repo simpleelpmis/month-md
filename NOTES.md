@@ -8,6 +8,7 @@
   - [March 1st](#march-1st)
   - [March 2nd](#march-2nd)
   - [March 3rd](#march-3rd)
+  - [March 5th](#march-5th)
 - [Resources](#resources)
 
 # Plan
@@ -75,6 +76,12 @@ Daily entries?
 
 - publish alpha
   - have to wait to republish
+
+## March 5th
+
+- add keywords
+- pad table
+
 # Resources
 
 - https://www.tablesgenerator.com/markdown_tables

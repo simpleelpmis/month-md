@@ -2,25 +2,25 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.monthTable = exports.weekDay = exports.daysInMonth = void 0;
 function daysInMonth(month, year) {
-    var dateObj = new Date(year, month, 0);
-    var daysNum = dateObj.getDate();
+    const dateObj = new Date(year, month, 0);
+    const daysNum = dateObj.getDate();
     return daysNum;
 }
 exports.daysInMonth = daysInMonth;
 function weekDay(month, year) {
-    var dateObj = new Date(year, month - 1, 1);
-    var weekDayNum = dateObj.getDay();
+    const dateObj = new Date(year, month - 1, 1);
+    const weekDayNum = dateObj.getDay();
     return weekDayNum;
 }
 exports.weekDay = weekDay;
 function monthTable(month, year) {
-    var daysNum = daysInMonth(month, year);
-    var weekDayNum = weekDay(month, year);
-    var breakLine = '\n|';
-    var monthTable = '|';
-    var weekDaysDone = 0;
-    var weekDaysRemain = 7;
-    var WeekDays;
+    const daysNum = daysInMonth(month, year);
+    const weekDayNum = weekDay(month, year);
+    const breakLine = '\n|';
+    let monthTable = '|';
+    let weekDaysDone = 0;
+    let weekDaysRemain = 7;
+    let WeekDays;
     (function (WeekDays) {
         WeekDays[WeekDays["Sunday"] = 0] = "Sunday";
         WeekDays[WeekDays["Monday"] = 1] = "Monday";
@@ -30,32 +30,38 @@ function monthTable(month, year) {
         WeekDays[WeekDays["Friday"] = 5] = "Friday";
         WeekDays[WeekDays["Saturday"] = 6] = "Saturday";
     })(WeekDays || (WeekDays = {}));
-    for (var i = 0; i <= 6; i++) {
+    for (let i = 0; i <= 6; i++) {
         monthTable += WeekDays[i] + '|';
     }
     monthTable += breakLine;
-    for (var i = 0; i <= 6; i++) {
-        monthTable += ':---:|';
+    let divider = ':---:';
+    for (let i = 0; i <= 6; i++) {
+        let dayLength = WeekDays[i].length;
+        monthTable += divider.padEnd(dayLength, ' ') + '|';
     }
     monthTable += breakLine;
-    for (var i = 0; i < (daysNum + weekDayNum); i++) {
+    for (let i = 0; i < (daysNum + weekDayNum); i++) {
+        weekDaysDone = (i % 7);
+        let dayLength = WeekDays[weekDaysDone].length;
         if (i < weekDayNum) {
-            monthTable += '  |';
+            monthTable += '|'.padStart(dayLength + 1, ' ');
         }
         else {
-            monthTable += (i - weekDayNum + 1) + '|';
+            let dayNumString = String(i + 1);
+            monthTable += dayNumString.padEnd(dayLength, ' ') + '|';
         }
-        weekDaysDone = (i % 7);
-        if ((i != 0) && (weekDaysDone == 0)) {
+        if ((i != 0) && (weekDaysDone == 6)) {
             monthTable += breakLine;
         }
     }
     weekDaysRemain = weekDaysRemain - weekDaysDone;
-    while (weekDaysRemain > 0) {
-        monthTable += '  |';
-        weekDaysRemain--;
+    while (weekDaysRemain < 7) {
+        console.log(WeekDays[weekDaysRemain]);
+        let dayLength = WeekDays[weekDaysRemain].length;
+        monthTable += '|'.padStart(dayLength + 1, ' ');
+        weekDaysRemain++;
     }
-    return monthTable.slice(0, -1);
+    return monthTable;
 }
 exports.monthTable = monthTable;
 //# sourceMappingURL=index.js.map
