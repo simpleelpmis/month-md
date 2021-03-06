@@ -78,8 +78,7 @@ function monthTable(year, month) {
     return monthTable;
 }
 exports.monthTable = monthTable;
-function labelMonthTable(year, month) {
-    const montTable = monthTable(year, month);
+function labelMonthTable(month) {
     const labelMonthTable = `|${Months[month - 1]}|\n|:---:|`;
     return labelMonthTable;
 }
