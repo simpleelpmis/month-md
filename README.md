@@ -1,4 +1,4 @@
-# month-md (alpha | 💀)
+# month-md
 
 Produce a markdown (md) table for the date provided (year, month)
 
@@ -8,7 +8,7 @@ const monthmd = require("month-md")
 console.log(monthmd.monthTable(2021,3))
 ```
 
-result (mardown)
+result (markdown):
 
 ```markdown
 |Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|
@@ -21,7 +21,7 @@ result (mardown)
 ```
 
 # INFO
-## 🤚🛑✋ Use @ own risk 🤚🛑✋
+## 🤚🛑✋
 
 Use at own risk, this is under heavy development for the rest of the month
 
