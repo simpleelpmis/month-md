@@ -96,3 +96,5 @@ Daily entries?
 - https://bugfender.com/blog/how-to-create-an-npm-package/
 - https://docs.npmjs.com/creating-node-js-modules
 - https://semver.org/
+- https://stackoverflow.com/questions/25333570/npm-package-json-bin-wont-work-on-windows
+- https://docs.npmjs.com/cli/v7/using-npm/scripts
