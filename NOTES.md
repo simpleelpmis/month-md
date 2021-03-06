@@ -9,6 +9,7 @@
   - [March 2nd](#march-2nd)
   - [March 3rd](#march-3rd)
   - [March 5th](#march-5th)
+  - [March 6th](#march-6th)
 - [Resources](#resources)
 
 # Plan
@@ -19,7 +20,7 @@
   - [x] month-md
 - [x] decide on an app
   - node app to create a markdown month
-- [ ] create a schedule
+~~- [ ] create a schedule~~
 - [ ] 1 hr daily / 31 hrs total
 - [ ] document as many steps as possible (sensibly)
 - [x] pick tech stack
@@ -27,17 +28,18 @@
   - typescript
 - [ ] tests
 - [ ] create wireframe
+- [ ] different languages
 - [ ] other
 
 # MARCH 2021
 
-| M     | T     | W     | T     | F     | S   | S   |
-| ----- | ----- | ----- | ----- | ----- | --- | --- |
-| ~~1~~ | ~~2~~ | ~~3~~ | ~~4~~ | ~~5~~ | 6   | 7   |
-| 8     | 9     | 10    | 11    | 12    | 13  | 14  |
-| 15    | 16    | 17    | 18    | 19    | 20  | 21  |
-| 22    | 23    | 24    | 25    | 26    | 27  | 28  |
-| 29    | 30    | 31    |       |       |     |     |
+| M     | T     | W     | T     | F     | S     | S   |
+| ----- | ----- | ----- | ----- | ----- | ----- | --- |
+| ~~1~~ | ~~2~~ | ~~3~~ | ~~4~~ | ~~5~~ | ~~6~~ | 7   |
+| 8     | 9     | 10    | 11    | 12    | 13    | 14  |
+| 15    | 16    | 17    | 18    | 19    | 20    | 21  |
+| 22    | 23    | 24    | 25    | 26    | 27    | 28  |
+| 29    | 30    | 31    |       |       |       |     |
 
 
 ## Ideas
@@ -82,6 +84,10 @@ Daily entries?
 - add keywords
 - pad table
 - use year, month format
+
+## March 6th
+
+-look into multiple languages
 
 # Resources
 
