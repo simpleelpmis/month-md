@@ -1,21 +1,21 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.monthTable = exports.weekDay = exports.daysInMonth = void 0;
-function daysInMonth(month, year) {
+function daysInMonth(year, month) {
     const dateObj = new Date(year, month, 0);
     const daysNum = dateObj.getDate();
     return daysNum;
 }
 exports.daysInMonth = daysInMonth;
-function weekDay(month, year) {
+function weekDay(year, month) {
     const dateObj = new Date(year, month - 1, 1);
     const weekDayNum = dateObj.getDay();
     return weekDayNum;
 }
 exports.weekDay = weekDay;
-function monthTable(month, year) {
-    const daysNum = daysInMonth(month, year);
-    const weekDayNum = weekDay(month, year);
+function monthTable(year, month) {
+    const daysNum = daysInMonth(year, month);
+    const weekDayNum = weekDay(year, month);
     const breakLine = '\n|';
     let monthTable = '|';
     let weekDaysDone = 0;
@@ -47,19 +47,18 @@ function monthTable(month, year) {
             monthTable += '|'.padStart(dayLength + 1, ' ');
         }
         else {
-            let dayNumString = String(i + 1);
+            let dayNumString = String(i - weekDayNum + 1);
             monthTable += dayNumString.padEnd(dayLength, ' ') + '|';
         }
-        if ((i != 0) && (weekDaysDone == 6)) {
+        if (((i != 0) && (weekDaysDone == 6)) && (i + 1 != (daysNum + weekDayNum))) {
             monthTable += breakLine;
         }
     }
-    weekDaysRemain = weekDaysRemain - weekDaysDone;
-    while (weekDaysRemain < 7) {
-        console.log(WeekDays[weekDaysRemain]);
-        let dayLength = WeekDays[weekDaysRemain].length;
+    weekDaysDone = weekDaysDone + 1;
+    while (weekDaysDone < 7) {
+        let dayLength = WeekDays[weekDaysDone].length;
         monthTable += '|'.padStart(dayLength + 1, ' ');
-        weekDaysRemain++;
+        weekDaysDone++;
     }
     return monthTable;
 }
