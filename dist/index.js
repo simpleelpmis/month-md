@@ -38,7 +38,14 @@ function weekDay(year, month) {
     return weekDayNum;
 }
 exports.weekDay = weekDay;
-function monthTable(year, month) {
+function monthTable(year = 0, month = 0) {
+    const today = new Date();
+    if (year == 0) {
+        year = today.getFullYear();
+    }
+    if (month == 0) {
+        month = today.getMonth();
+    }
     const daysNum = daysInMonth(year, month);
     const weekDayNum = weekDay(year, month);
     const breakLine = '\n';

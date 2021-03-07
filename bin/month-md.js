@@ -4,6 +4,7 @@ const actions = process.argv.slice(2);
 
 function helpmehelpyou() {
   console.log(`Usage:
+  month-md (default) current year and current month
   month-md year month
     ie., month-md 2021 3
 Options: 

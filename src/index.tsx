@@ -33,7 +33,18 @@ export function weekDay(year: number, month: number) {
     return weekDayNum
 }
 
-export function monthTable(year: number, month: number) {
+export function monthTable(year: number = 0, month: number = 0) {
+
+    const today:Date = new Date()
+
+    if(year == 0){
+        year = today.getFullYear()
+    }
+
+    if(month == 0){
+        month = today.getMonth()
+    }
+
     const daysNum: number = daysInMonth(year, month)
     const weekDayNum: number = weekDay(year, month)
     const breakLine: string = '\n'
