@@ -85,7 +85,11 @@ function monthTable(year = 0, month = 0) {
     return monthTable;
 }
 exports.monthTable = monthTable;
-function labelMonthTable(month) {
+function labelMonthTable(month = 0) {
+    const today = new Date();
+    if (month == 0) {
+        month = today.getMonth();
+    }
     const labelMonthTable = `|${Months[month - 1]}|\n|:---:|`;
     return labelMonthTable;
 }

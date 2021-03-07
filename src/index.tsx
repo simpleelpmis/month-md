@@ -35,13 +35,13 @@ export function weekDay(year: number, month: number) {
 
 export function monthTable(year: number = 0, month: number = 0) {
 
-    const today:Date = new Date()
+    const today: Date = new Date()
 
-    if(year == 0){
+    if (year == 0) {
         year = today.getFullYear()
     }
 
-    if(month == 0){
+    if (month == 0) {
         month = today.getMonth()
     }
 
@@ -93,7 +93,12 @@ export function monthTable(year: number = 0, month: number = 0) {
     return monthTable
 }
 
-export function labelMonthTable(month: number) {
-    const labelMonthTable:string = `|${Months[month-1]}|\n|:---:|`
+export function labelMonthTable(month: number = 0) {
+    const today: Date = new Date()
+
+    if (month == 0) {
+        month = today.getMonth()
+    }
+    const labelMonthTable: string = `|${Months[month - 1]}|\n|:---:|`
     return labelMonthTable
 }
