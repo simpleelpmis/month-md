@@ -16,8 +16,8 @@
 # Plan
 
 - [x] choose a name
-  - [ ] mdonth
-  - [ ] mdmonth
+  ~~- [ ] mdonth~~
+  ~~- [ ] mdmonth~~
   - [x] month-md
 - [x] decide on an app
   - node app to create a markdown month
@@ -32,6 +32,7 @@
 - [ ] create wireframe
 - [ ] different languages
 - [ ] other
+- [ ] create logo
 
 # MARCH 2021
 
@@ -89,7 +90,7 @@ Daily entries?
 
 ## March 6th
 
-- [ ] look into multiple languages
+- look into multiple languages
 
 ## March 7th
 

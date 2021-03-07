@@ -1,13 +1,25 @@
-# month-md
+# month-md @ v.0.0.1-alpha.7.1
 
-Produce a markdown (md) table for the date provided (year, month)
+Produce a markdown (md) table for the date provided (year, month). Defaults to current year and month.
 
 ## Use
 
-```javascript
+```js
 const monthMd = require("month-md")
 
 console.log(monthMd.monthTable(2021,3))
+```
+
+or
+
+```shell
+$ npx month-md
+```
+
+or
+
+```shell
+$ npx month-md 2021 03
 ```
 
 ## Result (markdown):
@@ -31,6 +43,7 @@ or
 |14    |15    |16     |17       |18      |19    |20      |
 |21    |22    |23     |24       |25      |26    |27      |
 |28    |29    |30     |31       |        |      |        |
+
 # NFO
 ## 🤚🛑✋
 
