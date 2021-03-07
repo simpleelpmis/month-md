@@ -10,6 +10,7 @@
   - [March 3rd](#march-3rd)
   - [March 5th](#march-5th)
   - [March 6th](#march-6th)
+  - [March 7th](#march-7th)
 - [Resources](#resources)
 
 # Plan
@@ -26,6 +27,7 @@
 - [x] pick tech stack
   - nodejs
   - typescript
+  - gulp
 - [ ] tests
 - [ ] create wireframe
 - [ ] different languages
@@ -33,13 +35,13 @@
 
 # MARCH 2021
 
-| M     | T     | W     | T     | F     | S     | S   |
-| ----- | ----- | ----- | ----- | ----- | ----- | --- |
-| ~~1~~ | ~~2~~ | ~~3~~ | ~~4~~ | ~~5~~ | ~~6~~ | 7   |
-| 8     | 9     | 10    | 11    | 12    | 13    | 14  |
-| 15    | 16    | 17    | 18    | 19    | 20    | 21  |
-| 22    | 23    | 24    | 25    | 26    | 27    | 28  |
-| 29    | 30    | 31    |       |       |       |     |
+| M     | T     | W     | T     | F     | S     | S     |
+| ----- | ----- | ----- | ----- | ----- | ----- | ----- |
+| ~~1~~ | ~~2~~ | ~~3~~ | ~~4~~ | ~~5~~ | ~~6~~ | ~~7~~ |
+| 8     | 9     | 10    | 11    | 12    | 13    | 14    |
+| 15    | 16    | 17    | 18    | 19    | 20    | 21    |
+| 22    | 23    | 24    | 25    | 26    | 27    | 28    |
+| 29    | 30    | 31    |       |       |       |       |
 
 
 ## Ideas
@@ -87,8 +89,12 @@ Daily entries?
 
 ## March 6th
 
--look into multiple languages
+- [ ] look into multiple languages
 
+## March 7th
+
+- begin using gulp
+- remove maps for now
 # Resources
 
 - https://www.tablesgenerator.com/markdown_tables
