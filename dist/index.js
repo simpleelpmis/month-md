@@ -94,4 +94,3 @@ function labelMonthTable(month = 0) {
     return labelMonthTable;
 }
 exports.labelMonthTable = labelMonthTable;
-//# sourceMappingURL=index.js.map

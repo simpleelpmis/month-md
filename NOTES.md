@@ -104,3 +104,4 @@ Daily entries?
 - https://semver.org/
 - https://stackoverflow.com/questions/25333570/npm-package-json-bin-wont-work-on-windows
 - https://docs.npmjs.com/cli/v7/using-npm/scripts
+- https://www.typescriptlang.org/docs/handbook/gulp.html

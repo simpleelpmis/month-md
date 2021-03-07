@@ -1,6 +1,6 @@
 {
   "name": "month-md",
-  "version": "0.0.1-alpha.6.2",
+  "version": "0.0.1-alpha.7",
   "description": "Markdown calendar, provide year and month and the MD shall come",
   "repository": "git@github.com:simpleelpmis/month-md.git",
   "author": "simple elpmis <simple@elpm.is>",
@@ -8,6 +8,7 @@
   "main": "dist/index.js",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "typescript": "^4.2.2"
   },
   "scripts": {
