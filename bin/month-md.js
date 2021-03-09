@@ -16,7 +16,7 @@ if ((actions.indexOf('--help') >= 0) || (actions.indexOf('-h') >= 0)) {
   process.exit(0)
 } 
 
-if(actions.length = 2){
+if(actions.length == 2){
   const monthMD = require('../dist/index')
   const monthTable = monthMD.monthTable(actions[0],actions[1])
   console.log(monthTable)
