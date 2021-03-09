@@ -11,6 +11,7 @@
   - [March 5th](#march-5th)
   - [March 6th](#march-6th)
   - [March 7th](#march-7th)
+  - [March 8th](#march-8th)
 - [Resources](#resources)
 
 # Plan
@@ -96,6 +97,11 @@ Daily entries?
 
 - begin using gulp
 - remove maps for now
+
+## March 8th
+
+- gulp to uglify
+- better way?
 # Resources
 
 - https://www.tablesgenerator.com/markdown_tables
