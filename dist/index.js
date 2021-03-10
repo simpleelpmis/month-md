@@ -56,20 +56,20 @@ function monthTable(year = 0, month = 0) {
         monthTable += WeekDays[i] + '|';
     }
     monthTable += breakLine + tableDivider;
-    let divider = ':---:';
+    const divider = ':---:';
     for (let i = 0; i <= 6; i++) {
-        let dayLength = WeekDays[i].length;
+        const dayLength = WeekDays[i].length;
         monthTable += divider.padEnd(dayLength, ' ') + '|';
     }
     monthTable += breakLine + tableDivider;
     for (let i = 0; i < (daysNum + weekDayNum); i++) {
         weekDaysDone = (i % 7);
-        let dayLength = WeekDays[weekDaysDone].length;
+        const dayLength = WeekDays[weekDaysDone].length;
         if (i < weekDayNum) {
             monthTable += '|'.padStart(dayLength + 1, ' ');
         }
         else {
-            let dayNumString = String(i - weekDayNum + 1);
+            const dayNumString = String(i - weekDayNum + 1);
             monthTable += dayNumString.padEnd(dayLength, ' ') + '|';
         }
         if (((i != 0) && (weekDaysDone == 6)) && (i + 1 != (daysNum + weekDayNum))) {
@@ -78,7 +78,7 @@ function monthTable(year = 0, month = 0) {
     }
     weekDaysDone = weekDaysDone + 1;
     while (weekDaysDone < 7) {
-        let dayLength = WeekDays[weekDaysDone].length;
+        const dayLength = WeekDays[weekDaysDone].length;
         monthTable += '|'.padStart(dayLength + 1, ' ');
         weekDaysDone++;
     }

@@ -1,12 +1,15 @@
 {
   "name": "month-md",
-  "version": "0.0.1-alpha.8",
+  "version": "0.0.1-alpha.9",
   "description": "Markdown calendar, provide year and month and the MD shall come",
   "repository": "git@github.com:simpleelpmis/month-md.git",
   "author": "simple elpmis <simple@elpm.is>",
   "license": "UNLICENSED",
   "main": "dist/index.js",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "eslint": "^7.21.0",
     "gulp": "^4.0.2",
     "gulp-rename": "^2.0.0",
     "gulp-typescript": "^6.0.0-alpha.1",

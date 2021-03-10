@@ -1,4 +1,4 @@
-# month-md @ v.0.0.1-alpha.7.1
+# month-md
 
 Produce a markdown (md) table for the date provided (year, month). Defaults to current year and month.
 

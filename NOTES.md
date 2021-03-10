@@ -12,6 +12,7 @@
   - [March 6th](#march-6th)
   - [March 7th](#march-7th)
   - [March 8th](#march-8th)
+  - [March 9th](#march-9th)
 - [Resources](#resources)
 
 # Plan
@@ -40,7 +41,7 @@
 | M     | T     | W     | T     | F     | S     | S     |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- |
 | ~~1~~ | ~~2~~ | ~~3~~ | ~~4~~ | ~~5~~ | ~~6~~ | ~~7~~ |
-| ~~8~~ | 9     | 10    | 11    | 12    | 13    | 14    |
+| ~~8~~ | ~~9~~ | 10    | 11    | 12    | 13    | 14    |
 | 15    | 16    | 17    | 18    | 19    | 20    | 21    |
 | 22    | 23    | 24    | 25    | 26    | 27    | 28    |
 | 29    | 30    | 31    |       |       |       |       |
@@ -102,6 +103,10 @@ Daily entries?
 
 - gulp to uglify
 - better way?
+
+## March 9th
+
+- init eslint
 # Resources
 
 - https://www.tablesgenerator.com/markdown_tables
@@ -118,3 +123,4 @@ Daily entries?
 - https://stackoverflow.com/questions/25333570/npm-package-json-bin-wont-work-on-windows
 - https://docs.npmjs.com/cli/v7/using-npm/scripts
 - https://www.typescriptlang.org/docs/handbook/gulp.html
+- https://palantir.github.io/tslint/rules/no-var-requires/
