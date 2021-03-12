@@ -14,6 +14,7 @@
   - [March 8th](#march-8th)
   - [March 9th](#march-9th)
   - [March 10th](#march-10th)
+  - [March 11th](#march-11th)
 - [Resources](#resources)
 
 # Plan
@@ -39,13 +40,13 @@
 
 # MARCH 2021
 
-| M     | T     | W      | T     | F     | S     | S     |
-| ----- | ----- | ------ | ----- | ----- | ----- | ----- |
-| ~~1~~ | ~~2~~ | ~~3~~  | ~~4~~ | ~~5~~ | ~~6~~ | ~~7~~ |
-| ~~8~~ | ~~9~~ | ~~10~~ | 11    | 12    | 13    | 14    |
-| 15    | 16    | 17     | 18    | 19    | 20    | 21    |
-| 22    | 23    | 24     | 25    | 26    | 27    | 28    |
-| 29    | 30    | 31     |       |       |       |       |
+| M     | T     | W      | T      | F     | S     | S     |
+| ----- | ----- | ------ | ------ | ----- | ----- | ----- |
+| ~~1~~ | ~~2~~ | ~~3~~  | ~~4~~  | ~~5~~ | ~~6~~ | ~~7~~ |
+| ~~8~~ | ~~9~~ | ~~10~~ | ~~11~~ | 12    | 13    | 14    |
+| 15    | 16    | 17     | 18     | 19    | 20    | 21    |
+| 22    | 23    | 24     | 25     | 26    | 27    | 28    |
+| 29    | 30    | 31     |        |       |       |       |
 
 
 ## Ideas
@@ -113,6 +114,10 @@ Daily entries?
 
 - md docs
 
+## March 11th
+
+- beta version?
+
 # Resources
 
 - https://www.tablesgenerator.com/markdown_tables
@@ -130,3 +135,4 @@ Daily entries?
 - https://docs.npmjs.com/cli/v7/using-npm/scripts
 - https://www.typescriptlang.org/docs/handbook/gulp.html
 - https://palantir.github.io/tslint/rules/no-var-requires/
+- https://docs.npmjs.com/updating-your-published-package-version-number
