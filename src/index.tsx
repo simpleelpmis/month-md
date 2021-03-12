@@ -1,12 +1,43 @@
-enum WeekDays {
-	Sunday,
-	Monday,
-	Tuesday,
-	Wednesday,
-	Thursday,
-	Friday,
-	Saturday
-}
+const json_language = `{
+	"en":["Sunday",
+		"Monday",
+		"Tuesday",
+		"Wednesday",
+		"Thursday",
+		"Friday",
+		"Saturday"],
+	"es":["domingo",
+		"lunes",
+		"martes",
+		"miércoles",
+		"jueves",
+		"viernes",
+		"sábado"],
+	"fr":["dimanche",
+		"lundi",
+		"mardi",
+		"mercredi",
+		"jeudi",
+		"vendredi",
+		"samedi"],
+	"pt":["Domingo",
+		"Segunda-feira",
+		"Terça-feira",
+		"Quarta-feira",
+		"Quinta-feira",
+		"Sexta-feira",
+		"Sábado"],
+	"kr":"[일요일",
+		"월요일",
+		"화요일",
+		"수요일",
+		"목요일",
+		"금요일",
+		"토요일"]
+}`
+
+const language = JSON.parse(json_language.toString())
+console.log(language)
 enum Months {
 	January,
 	February,
@@ -21,21 +52,27 @@ enum Months {
 	November,
 	December
 }
-export function daysInMonth(year: number, month: number):number {
+
+export function daysInMonth(year: number, month: number): number {
 	const dateObj: Date = new Date(year, month, 0)
 	const daysNum: number = dateObj.getDate()
 	return daysNum
 }
 
-export function weekDay(year: number, month: number):number{
+export function weekDay(year: number, month: number): number {
 	const dateObj: Date = new Date(year, month - 1, 1)
 	const weekDayNum: number = dateObj.getDay()
 	return weekDayNum
 }
 
-export function monthTable(year = 0, month = 0):string {
+export function monthTable(year = 0, month = 0, lang = 'en'): string {
 
 	const today: Date = new Date()
+
+	if(typeof(year) == 'string'){
+		lang = year
+		year = 0
+	}
 
 	if (year == 0) {
 		year = today.getFullYear()
@@ -53,14 +90,14 @@ export function monthTable(year = 0, month = 0):string {
 	let weekDaysDone = 0
 
 	for (let i = 0; i <= 6; i++) {
-		monthTable += WeekDays[i] + '|'
+		monthTable += language[lang][i] + '|'
 	}
 	monthTable += breakLine + tableDivider
 
 	const divider = ':---:'
 
 	for (let i = 0; i <= 6; i++) {
-		const dayLength = WeekDays[i].length
+		const dayLength = language[lang][i].length
 		monthTable += divider.padEnd(dayLength, ' ') + '|'
 	}
 
@@ -69,7 +106,7 @@ export function monthTable(year = 0, month = 0):string {
 	for (let i = 0; i < (daysNum + weekDayNum); i++) {
 		weekDaysDone = (i % 7)
 
-		const dayLength = WeekDays[weekDaysDone].length
+		const dayLength = language[lang][weekDaysDone].length
 
 		if (i < weekDayNum) {
 			monthTable += '|'.padStart(dayLength + 1, ' ')
@@ -85,7 +122,7 @@ export function monthTable(year = 0, month = 0):string {
 	weekDaysDone = weekDaysDone + 1
 
 	while (weekDaysDone < 7) {
-		const dayLength = WeekDays[weekDaysDone].length
+		const dayLength = language[lang][weekDaysDone].length
 		monthTable += '|'.padStart(dayLength + 1, ' ')
 		weekDaysDone++
 	}
@@ -93,7 +130,7 @@ export function monthTable(year = 0, month = 0):string {
 	return monthTable
 }
 
-export function labelMonthTable(month = 0):string {
+export function labelMonthTable(month = 0): string {
 	const today: Date = new Date()
 
 	if (month == 0) {

@@ -117,6 +117,7 @@ Daily entries?
 ## March 11th
 
 - beta version?
+- ISO 639-1 codes lang
 
 # Resources
 
@@ -136,3 +137,4 @@ Daily entries?
 - https://www.typescriptlang.org/docs/handbook/gulp.html
 - https://palantir.github.io/tslint/rules/no-var-requires/
 - https://docs.npmjs.com/updating-your-published-package-version-number
+- http://jsonviewer.stack.hu/
