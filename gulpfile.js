@@ -23,4 +23,8 @@ gulp.task('tsfilemin', function () {
 		.pipe(gulp.dest(`${paths.dist}/`))
 })
 
+gulp.task('watch', function () {
+	gulp.watch(`${paths.source}/index.tsx`, gulp.series('tsfile'))
+})
+
 gulp.task('default', gulp.series('tsfile', 'tsfilemin'))
