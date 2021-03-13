@@ -1,6 +1,8 @@
 # month-md
 
-Produce a markdown (md) table for the date provided (year, month). Defaults to current year and month in english. You can also set a language string to retrieve the days of weekday in the selected language. Currently support:
+Produce a markdown (.md) table for the date provided (year, month). Defaults to current year and month and days of the week in english. You can switch the language to retrieve differente days of the week. 
+
+Supports:
 
 - en | english
 - es | español
