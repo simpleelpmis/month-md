@@ -15,6 +15,7 @@
   - [March 9th](#march-9th)
   - [March 10th](#march-10th)
   - [March 11th](#march-11th)
+  - [March 12th](#march-12th)
 - [Resources](#resources)
 
 # Plan
@@ -119,6 +120,9 @@ Daily entries?
 - beta version?
 - ISO 639-1 codes lang
 
+## March 12th
+
+- beta 🥕
 # Resources
 
 - https://www.tablesgenerator.com/markdown_tables

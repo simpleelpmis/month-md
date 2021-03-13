@@ -61,15 +61,33 @@ function weekDay(year, month) {
 exports.weekDay = weekDay;
 function monthTable(year = 0, month = 0, lang = 'en') {
     const today = new Date();
-    if (typeof (year) == 'string') {
-        lang = year;
-        year = 0;
+    if (isNaN(year)) {
+        if (typeof (year) == 'string') {
+            lang = year;
+            year = 0;
+        }
+    }
+    else {
+        const yearTrunc = Math.trunc(year);
+        if (typeof (yearTrunc) == 'number') {
+            if (yearTrunc < 0) {
+                throw Error('Invalid Year');
+            }
+            year = yearTrunc;
+        }
     }
     if (year == 0) {
         year = today.getFullYear();
     }
     if (month == 0) {
         month = today.getMonth();
+    }
+    month = Math.trunc(month);
+    if (month > 12) {
+        throw Error('Invalid Month >12');
+    }
+    if (month < 1) {
+        throw Error('Invalid Month <1');
     }
     const daysNum = daysInMonth(year, month);
     const weekDayNum = weekDay(year, month);

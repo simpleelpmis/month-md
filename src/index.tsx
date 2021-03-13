@@ -62,9 +62,20 @@ export function monthTable(year = 0, month = 0, lang = 'en'): string {
 
 	const today: Date = new Date()
 
-	if(typeof(year) == 'string'){
-		lang = year
-		year = 0
+	if (isNaN(year)) {
+		if (typeof (year) == 'string') {
+			lang = year
+			year = 0
+		}
+	} else {
+		const yearTrunc = Math.trunc(year)
+
+		if (typeof (yearTrunc) == 'number') {
+			if (yearTrunc < 0) {
+				throw Error('Invalid Year')
+			}
+			year = yearTrunc
+		}
 	}
 
 	if (year == 0) {
@@ -73,6 +84,14 @@ export function monthTable(year = 0, month = 0, lang = 'en'): string {
 
 	if (month == 0) {
 		month = today.getMonth()
+	}
+
+	month = Math.trunc(month)
+	if (month > 12) {
+		throw Error('Invalid Month >12')
+	}
+	if (month < 1) {
+		throw Error('Invalid Month <1')
 	}
 
 	const daysNum: number = daysInMonth(year, month)
