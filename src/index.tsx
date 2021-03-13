@@ -27,7 +27,7 @@ const json_language = `{
 		"Quinta-feira",
 		"Sexta-feira",
 		"Sábado"],
-	"kr":["일요일",
+	"ko":["일요일",
 		"월요일",
 		"화요일",
 		"수요일",
