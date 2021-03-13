@@ -16,6 +16,7 @@
   - [March 10th](#march-10th)
   - [March 11th](#march-11th)
   - [March 12th](#march-12th)
+  - [March 13th](#march-13th)
 - [Resources](#resources)
 
 # Plan
@@ -35,19 +36,20 @@
   - gulp
 - [ ] tests
 - [ ] create wireframe
-- [ ] different languages
+- [x] different languages
 - [ ] other
 - [ ] create logo
+- [ ] get Inuktitut weekdays
 
 # MARCH 2021
 
-| M     | T     | W      | T      | F     | S     | S     |
-| ----- | ----- | ------ | ------ | ----- | ----- | ----- |
-| ~~1~~ | ~~2~~ | ~~3~~  | ~~4~~  | ~~5~~ | ~~6~~ | ~~7~~ |
-| ~~8~~ | ~~9~~ | ~~10~~ | ~~11~~ | 12    | 13    | 14    |
-| 15    | 16    | 17     | 18     | 19    | 20    | 21    |
-| 22    | 23    | 24     | 25     | 26    | 27    | 28    |
-| 29    | 30    | 31     |        |       |       |       |
+| M     | T     | W      | T      | F      | S      | S     |
+| ----- | ----- | ------ | ------ | ------ | ------ | ----- |
+| ~~1~~ | ~~2~~ | ~~3~~  | ~~4~~  | ~~5~~  | ~~6~~  | ~~7~~ |
+| ~~8~~ | ~~9~~ | ~~10~~ | ~~11~~ | ~~12~~ | ~~13~~ | 14    |
+| 15    | 16    | 17     | 18     | 19     | 20     | 21    |
+| 22    | 23    | 24     | 25     | 26     | 27     | 28    |
+| 29    | 30    | 31     |        |        |        |       |
 
 
 ## Ideas
@@ -123,6 +125,18 @@ Daily entries?
 ## March 12th
 
 - beta 🥕
+
+## March 13th
+
+- gulp watch 🍺⌚
+- not enough research b4?
+  - https://www.npmjs.com/search?q=days%20of%20the%20week&page=0&perPage=20
+    - https://www.npmjs.com/package/i18n-week-days
+    - https://www.npmjs.com/package/weekday
+    - https://www.npmjs.com/package/days
+    - https://www.npmjs.com/package/days-of-week
+    - https://www.npmjs.com/package/calendar-month-array
+
 # Resources
 
 - https://www.tablesgenerator.com/markdown_tables
@@ -142,3 +156,8 @@ Daily entries?
 - https://palantir.github.io/tslint/rules/no-var-requires/
 - https://docs.npmjs.com/updating-your-published-package-version-number
 - http://jsonviewer.stack.hu/
+- https://www.tutorialspoint.com/typescript/typescript_return_array_from_functions.htm
+- https://stackoverflow.com/questions/33539797/how-to-create-string-with-multiple-spaces-in-javascript
+- https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+- https://en.wikipedia.org/wiki/Names_of_the_days_of_the_week
+

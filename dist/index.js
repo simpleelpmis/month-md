@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.labelMonthTable = exports.monthTable = exports.weekDay = exports.daysInMonth = void 0;
+exports.labelMonthTable = exports.monthTable = exports.weekDay = exports.daysInMonth = exports.listLanguages = void 0;
 const json_language = `{
 	"en":["Sunday",
 		"Monday",
@@ -29,7 +29,42 @@ const json_language = `{
 		"Quarta-feira",
 		"Quinta-feira",
 		"Sexta-feira",
-		"Sábado"]
+		"Sábado"],
+	"kr":["일요일",
+		"월요일",
+		"화요일",
+		"수요일",
+		"목요일",
+		"금요일",
+		"토요일"],
+	"ja":["にちようび",
+		"げつようび",
+		"かようび",
+		"すいようび",
+		"もくようび",
+		"きんようび",
+		"どようび"],
+	"zh":["星期日",
+		"星期一",
+		"星期二",
+		"星期三",
+		"星期四",
+		"星期五",
+		"星期六"],
+	"da":["søndag",
+		"mandag",
+		"tirsdag",
+		"onsdag",
+		"torsdag",
+		"fredag",
+		"lørdag"],
+	"hi":["रविवार",
+		"सोमवार",
+		"मंगलवार",
+		"बुधवार",
+		"गुरूवार",
+		"शुक्रवार",
+		"शनिवार"]
 }`;
 const language = JSON.parse(json_language.toString());
 var Months;
@@ -47,6 +82,10 @@ var Months;
     Months[Months["November"] = 10] = "November";
     Months[Months["December"] = 11] = "December";
 })(Months || (Months = {}));
+function listLanguages() {
+    return Object.keys(language);
+}
+exports.listLanguages = listLanguages;
 function daysInMonth(year, month) {
     const dateObj = new Date(year, month, 0);
     const daysNum = dateObj.getDate();
@@ -95,25 +134,33 @@ function monthTable(year = 0, month = 0, lang = 'en') {
     const tableDivider = '|';
     let monthTable = tableDivider;
     let weekDaysDone = 0;
+    const divider = ':---:';
+    const dividerLength = divider.length;
     for (let i = 0; i <= 6; i++) {
-        monthTable += language[lang][i] + '|';
+        let dayLength = language[lang][i].length;
+        if (dayLength < dividerLength) {
+            dayLength = dividerLength;
+        }
+        monthTable += language[lang][i].padEnd(dayLength, '\xa0') + '|';
     }
     monthTable += breakLine + tableDivider;
-    const divider = ':---:';
     for (let i = 0; i <= 6; i++) {
         const dayLength = language[lang][i].length;
-        monthTable += divider.padEnd(dayLength, ' ') + '|';
+        monthTable += divider.padEnd(dayLength, '\xa0') + '|';
     }
     monthTable += breakLine + tableDivider;
     for (let i = 0; i < (daysNum + weekDayNum); i++) {
         weekDaysDone = (i % 7);
-        const dayLength = language[lang][weekDaysDone].length;
+        let dayLength = language[lang][weekDaysDone].length;
+        if (dayLength < dividerLength) {
+            dayLength = dividerLength;
+        }
         if (i < weekDayNum) {
-            monthTable += '|'.padStart(dayLength + 1, ' ');
+            monthTable += '|'.padStart(dayLength + 1, '\xa0');
         }
         else {
             const dayNumString = String(i - weekDayNum + 1);
-            monthTable += dayNumString.padEnd(dayLength, ' ') + '|';
+            monthTable += dayNumString.padEnd(dayLength, '\xa0') + '|';
         }
         if (((i != 0) && (weekDaysDone == 6)) && (i + 1 != (daysNum + weekDayNum))) {
             monthTable += breakLine + tableDivider;
@@ -121,8 +168,11 @@ function monthTable(year = 0, month = 0, lang = 'en') {
     }
     weekDaysDone = weekDaysDone + 1;
     while (weekDaysDone < 7) {
-        const dayLength = language[lang][weekDaysDone].length;
-        monthTable += '|'.padStart(dayLength + 1, ' ');
+        let dayLength = language[lang][weekDaysDone].length;
+        if (dayLength < dividerLength) {
+            dayLength = dividerLength;
+        }
+        monthTable += '|'.padStart(dayLength + 1, '\xa0');
         weekDaysDone++;
     }
     return monthTable;

@@ -26,7 +26,42 @@ const json_language = `{
 		"Quarta-feira",
 		"Quinta-feira",
 		"Sexta-feira",
-		"Sábado"]
+		"Sábado"],
+	"kr":["일요일",
+		"월요일",
+		"화요일",
+		"수요일",
+		"목요일",
+		"금요일",
+		"토요일"],
+	"ja":["にちようび",
+		"げつようび",
+		"かようび",
+		"すいようび",
+		"もくようび",
+		"きんようび",
+		"どようび"],
+	"zh":["星期日",
+		"星期一",
+		"星期二",
+		"星期三",
+		"星期四",
+		"星期五",
+		"星期六"],
+	"da":["søndag",
+		"mandag",
+		"tirsdag",
+		"onsdag",
+		"torsdag",
+		"fredag",
+		"lørdag"],
+	"hi":["रविवार",
+		"सोमवार",
+		"मंगलवार",
+		"बुधवार",
+		"गुरूवार",
+		"शुक्रवार",
+		"शनिवार"]
 }`
 
 const language = JSON.parse(json_language.toString())
@@ -44,6 +79,10 @@ enum Months {
 	October,
 	November,
 	December
+}
+
+export function listLanguages():string[]{
+	return Object.keys(language)
 }
 
 export function daysInMonth(year: number, month: number): number {
@@ -87,6 +126,7 @@ export function monthTable(year = 0, month = 0, lang = 'en'): string {
 	}
 
 	month = Math.trunc(month)
+
 	if (month > 12) {
 		throw Error('Invalid Month >12')
 	}
@@ -100,17 +140,22 @@ export function monthTable(year = 0, month = 0, lang = 'en'): string {
 	const tableDivider = '|'
 	let monthTable: string = tableDivider
 	let weekDaysDone = 0
+	const divider = ':---:'
+	const dividerLength = divider.length
 
 	for (let i = 0; i <= 6; i++) {
-		monthTable += language[lang][i] + '|'
+		let dayLength = language[lang][i].length
+		if(dayLength<dividerLength){
+			dayLength = dividerLength
+		}
+		monthTable += language[lang][i].padEnd(dayLength, '\xa0') + '|'
 	}
 	monthTable += breakLine + tableDivider
 
-	const divider = ':---:'
 
 	for (let i = 0; i <= 6; i++) {
 		const dayLength = language[lang][i].length
-		monthTable += divider.padEnd(dayLength, ' ') + '|'
+		monthTable += divider.padEnd(dayLength, '\xa0') + '|'
 	}
 
 	monthTable += breakLine + tableDivider
@@ -118,13 +163,16 @@ export function monthTable(year = 0, month = 0, lang = 'en'): string {
 	for (let i = 0; i < (daysNum + weekDayNum); i++) {
 		weekDaysDone = (i % 7)
 
-		const dayLength = language[lang][weekDaysDone].length
+		let dayLength = language[lang][weekDaysDone].length
+		if(dayLength<dividerLength){
+			dayLength = dividerLength
+		}
 
 		if (i < weekDayNum) {
-			monthTable += '|'.padStart(dayLength + 1, ' ')
+			monthTable += '|'.padStart(dayLength + 1, '\xa0')
 		} else {
 			const dayNumString = String(i - weekDayNum + 1)
-			monthTable += dayNumString.padEnd(dayLength, ' ') + '|'
+			monthTable += dayNumString.padEnd(dayLength, '\xa0') + '|'
 		}
 		if (((i != 0) && (weekDaysDone == 6)) && (i + 1 != (daysNum + weekDayNum))) {
 			monthTable += breakLine + tableDivider
@@ -134,8 +182,11 @@ export function monthTable(year = 0, month = 0, lang = 'en'): string {
 	weekDaysDone = weekDaysDone + 1
 
 	while (weekDaysDone < 7) {
-		const dayLength = language[lang][weekDaysDone].length
-		monthTable += '|'.padStart(dayLength + 1, ' ')
+		let dayLength = language[lang][weekDaysDone].length
+		if(dayLength<dividerLength){
+			dayLength = dividerLength
+		}
+		monthTable += '|'.padStart(dayLength + 1, '\xa0')
 		weekDaysDone++
 	}
 
