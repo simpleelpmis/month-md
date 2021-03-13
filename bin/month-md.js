@@ -27,7 +27,7 @@ function info(){
 
 if (actions.length == 1) {
 	const lang = actions[0].toString()
-	const languages = ['en','fr','es','pt']
+	const languages = monthMD.listLanguages()
 	if(languages.includes(lang)){
 		const monthTable = monthMD.monthTable(lang)
 		console.log(monthTable)
