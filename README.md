@@ -8,7 +8,7 @@ Supports:
 - es | español
 - pt | português
 - fr | français
-- kr | 한국어
+- ko | 한국어
 - ja | 日本語 (にほんご)
 - zh | 中文 (Zhōngwén), 汉语, 漢語
 - da | dansk
