@@ -17,6 +17,7 @@
   - [March 11th](#march-11th)
   - [March 12th](#march-12th)
   - [March 13th](#march-13th)
+  - [March 14th](#march-14th)
 - [Resources](#resources)
 
 # Plan
@@ -43,13 +44,13 @@
 
 # MARCH 2021
 
-| M     | T     | W      | T      | F      | S      | S     |
-| ----- | ----- | ------ | ------ | ------ | ------ | ----- |
-| ~~1~~ | ~~2~~ | ~~3~~  | ~~4~~  | ~~5~~  | ~~6~~  | ~~7~~ |
-| ~~8~~ | ~~9~~ | ~~10~~ | ~~11~~ | ~~12~~ | ~~13~~ | 14    |
-| 15    | 16    | 17     | 18     | 19     | 20     | 21    |
-| 22    | 23    | 24     | 25     | 26     | 27     | 28    |
-| 29    | 30    | 31     |        |        |        |       |
+| M     | T     | W      | T      | F      | S      | S      |
+| ----- | ----- | ------ | ------ | ------ | ------ | ------ |
+| ~~1~~ | ~~2~~ | ~~3~~  | ~~4~~  | ~~5~~  | ~~6~~  | ~~7~~  |
+| ~~8~~ | ~~9~~ | ~~10~~ | ~~11~~ | ~~12~~ | ~~13~~ | ~~14~~ |
+| 15    | 16    | 17     | 18     | 19     | 20     | 21     |
+| 22    | 23    | 24     | 25     | 26     | 27     | 28     |
+| 29    | 30    | 31     |        |        |        |        |
 
 
 ## Ideas
@@ -137,6 +138,9 @@ Daily entries?
     - https://www.npmjs.com/package/days-of-week
     - https://www.npmjs.com/package/calendar-month-array
 
+## March 14th
+
+- v1.0.0
 # Resources
 
 - https://www.tablesgenerator.com/markdown_tables
@@ -160,4 +164,4 @@ Daily entries?
 - https://stackoverflow.com/questions/33539797/how-to-create-string-with-multiple-spaces-in-javascript
 - https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 - https://en.wikipedia.org/wiki/Names_of_the_days_of_the_week
-
+- https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
