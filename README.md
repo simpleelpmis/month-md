@@ -4,15 +4,19 @@ Produce a markdown (.md) table for the date provided (year, month). Defaults to 
 
 Supports:
 
-- en | english
-- es | español
-- pt | português
-- fr | français
-- ko | 한국어
-- ja | 日本語 (にほんご)
-- zh | 中文 (Zhōngwén), 汉语, 漢語
-- da | dansk
-- hi | हिन्दी, हिंदी
+| code | lang                        |
+| ---: | :-------------------------- |
+|   da | dansk                       |
+|   en | english                     |
+|   es | español                     |
+|   fr | français                    |
+|   hi | हिन्दी, हिंदी                     |
+|   ja | 日本語 (にほんご)           |
+|   ko | 한국어                      |
+|   pt | português                   |
+|   ru | русский                     |
+|   zh | 中文 (Zhōngwén), 汉语, 漢語 |
+
 
 Pending:
 
@@ -42,24 +46,24 @@ $ npx month-md pt
 ## Result (markdown):
 
 ```markdown
-|Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|
-|:---: |:---: |:---:  |:---:    |:---:   |:---: |:---:   |
-|      |1     |2      |3        |4       |5     |6       |
-|7     |8     |9      |10       |11      |12    |13      |
-|14    |15    |16     |17       |18      |19    |20      |
-|21    |22    |23     |24       |25      |26    |27      |
-|28    |29    |30     |31       |        |      |        |
+| Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
+| :----: | :----: | :-----: | :-------: | :------: | :----: | :------: |
+|        |   1    |    2    |     3     |    4     |   5    |    6     |
+|   7    |   8    |    9    |    10     |    11    |   12   |    13    |
+|   14   |   15   |   16    |    17     |    18    |   19   |    20    |
+|   21   |   22   |   23    |    24     |    25    |   26   |    27    |
+|   28   |   29   |   30    |    31     |          |        |          |
 ```
 
 or
 
-|Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|
-|:---: |:---: |:---:  |:---:    |:---:   |:---: |:---:   |
-|      |1     |2      |3        |4       |5     |6       |
-|7     |8     |9      |10       |11      |12    |13      |
-|14    |15    |16     |17       |18      |19    |20      |
-|21    |22    |23     |24       |25      |26    |27      |
-|28    |29    |30     |31       |        |      |        |
+| Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday |
+| :----: | :----: | :-----: | :-------: | :------: | :----: | :------: |
+|        |   1    |    2    |     3     |    4     |   5    |    6     |
+|   7    |   8    |    9    |    10     |    11    |   12   |    13    |
+|   14   |   15   |   16    |    17     |    18    |   19   |    20    |
+|   21   |   22   |   23    |    24     |    25    |   26   |    27    |
+|   28   |   29   |   30    |    31     |          |        |          |
 
 ## Part of the [Cotoron](https://cotoron.ga/) series
 
