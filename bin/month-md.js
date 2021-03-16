@@ -20,7 +20,7 @@ if ((actions.indexOf('--help') >= 0) || (actions.indexOf('-h') >= 0)) {
 	process.exit(0)
 }
 
-function info(){
+function info() {
 	console.log('Invalid,\n Please use:\n -h or --help for HELP')
 	process.exit(0)
 }
@@ -28,10 +28,10 @@ function info(){
 if (actions.length == 1) {
 	const lang = actions[0].toString()
 	const languages = monthMD.listLanguages()
-	if(languages.includes(lang)){
+	if (languages.includes(lang)) {
 		const monthTable = monthMD.monthTable(lang)
 		console.log(monthTable)
-	}else{
+	} else {
 		info()
 	}
 } else if (actions.length == 2) {

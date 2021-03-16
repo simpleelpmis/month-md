@@ -88,7 +88,7 @@ enum Months {
 	December
 }
 
-export function listLanguages():string[]{
+export function listLanguages(): string[] {
 	return Object.keys(language)
 }
 
@@ -152,7 +152,7 @@ export function monthTable(year = 0, month = 0, lang = 'en'): string {
 
 	for (let i = 0; i <= 6; i++) {
 		let dayLength = language[lang][i].length
-		if(dayLength<dividerLength){
+		if (dayLength < dividerLength) {
 			dayLength = dividerLength
 		}
 		monthTable += language[lang][i].padEnd(dayLength, '\xa0') + '|'
@@ -171,7 +171,7 @@ export function monthTable(year = 0, month = 0, lang = 'en'): string {
 		weekDaysDone = (i % 7)
 
 		let dayLength = language[lang][weekDaysDone].length
-		if(dayLength<dividerLength){
+		if (dayLength < dividerLength) {
 			dayLength = dividerLength
 		}
 
@@ -190,7 +190,7 @@ export function monthTable(year = 0, month = 0, lang = 'en'): string {
 
 	while (weekDaysDone < 7) {
 		let dayLength = language[lang][weekDaysDone].length
-		if(dayLength<dividerLength){
+		if (dayLength < dividerLength) {
 			dayLength = dividerLength
 		}
 		monthTable += '|'.padStart(dayLength + 1, '\xa0')
